@@ -2,7 +2,6 @@ tap "dopplerhq/cli"
 
 brew "balena-cli"
 brew "mas"
-brew "mise"
 brew "pwgen"
 brew "dopplerhq/cli/doppler"
 
