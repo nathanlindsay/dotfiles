@@ -2,20 +2,20 @@
 echo "Installing Homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 echo "Installed Homebrew"
+exec zsh # Restart the shell
 
 # Install Homebrew packages
 echo "Installing Homebrew packages"
 brew bundle install
 echo "Installed Homebrew packages"
+exec zsh # Restart the shell
 
 # Install mise
 echo "Installing mise"
 curl https://mise.jdx.dev/install.sh | sh
 echo 'eval "$(~/.local/bin/mise activate zsh)"' >> ~/.zshrc
 echo "Installed mise"
-
-# Restart the shell
-exec zsh
+exec zsh # Restart the shell
 
 # Install Node 20
 echo "Installing Node 20"
@@ -29,5 +29,5 @@ echo "Installed Python 3"
 
 # Install Bun
 echo "Installing Bun"
-mise use -g bun@latest
+mise use --global bun@latest
 echo "Installed Bun"
