@@ -26,3 +26,4 @@ mas "Microsoft PowerPoint", id: 462062816
 mas "Microsoft Word", id: 462054704
 mas "OneDrive", id: 823766827
 mas "Parallels Desktop", id: 1085114709
+mas "Things", id: 904280696
